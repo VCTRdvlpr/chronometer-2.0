@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="./src/css/style.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron&display=swap" rel="stylesheet">
+
+    <title>Cronômetro</title>
+
+</head>
+<body>
+    <div class="color-container">
+        <div class="change-color">      
+            <h1>Alterar cor</h1>      
+            <input id="switch-shadow" class="switch switch--shadow" type="checkbox" />
+            <label for="switch-shadow"></label>            
+        </div>
+    </div>
+    <div class="main-container">
+        <h1>Cronômetro <span>2.0</span></h1>
+        <div class="timer-container">
+            <div class="time" id="minutes">00</div>
+            <div class="separator">:</div>
+            <div class="time" id="seconds">00</div>
+            <div class="separator">:</div>
+            <div class="time" id="miliseconds">000</div>                        
+        </div>
+        <div class="btns-container">
+            <button class="btn" id="startBtn"><img src="./src/img/outline_play_circle_filled_black_24dp.png" alt="play icon"></button> 
+            <button class="btn" id="pauseBtn"><img src="./src/img/outline_pause_black_24dp.png" alt="pause icon"> </button>               
+            <button class="btn" id="resumeBtn"><img src="./src/img/resume-icon.png" alt="resume icon"></button>                   
+            <button class="btn" id="resetBtn"><img src="./src/img/outline_replay_black_24dp.png" alt="reset icon"></button>
+        </div>
+    </div>
+    
+    <script type="text/javascript" src="./src/js/script.js"></script>
+</body>
+</html>

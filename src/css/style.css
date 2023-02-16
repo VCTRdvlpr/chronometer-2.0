@@ -1,0 +1,147 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Orbitron', sans-serif;
+}
+
+ul {
+    list-style: none;
+}
+
+a {
+    color: #00000055;
+}
+
+.color-container{
+    display: flex;
+    justify-content: flex-end;
+    margin: 20px 20px;    
+}
+
+.change-color{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+
+.main-container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;    
+    height: 87vh;
+    justify-content: center;
+    gap: 20px;   
+}
+
+.main-container h1{
+    font-size: 3em;
+}
+
+.main-container span{  
+  background-color: #000000;
+  color: #ffff;
+  border-radius: 100%;
+  padding: 15px;
+}
+
+.timer-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 5px;
+    font-size: 3em;    
+}
+
+.time{
+  min-width: 90px;
+}
+
+#miliseconds{
+    font-size: 30px;    
+    height: 110%;
+}
+
+.separator{
+    font-weight: bold;
+}
+
+.btn{    
+    border: none;   
+    background-color: transparent ;    
+    border-radius: 90px;    
+}
+
+.btn img{  
+    cursor: pointer;
+}
+
+.btn img:hover{
+  scale: 1.1;  
+}
+
+.btn img:active{
+  scale: 1;
+}
+
+#pauseBtn, #resumeBtn{
+  display: none;
+}
+
+#resumeBtn img{
+  width: 50px;
+  height: 50px;
+} 
+/*------------SWITCH BTN ----------------*/
+
+.switch {
+    position: absolute;
+    margin-left: -9999px;
+    visibility: hidden;
+  }
+  
+  .switch + label {
+    display: block;
+    position: relative;
+    cursor: pointer;
+    outline: none;
+    user-select: none;
+  }
+
+  .switch--shadow + label {
+    padding: 2px;
+    width: 40px;
+    height: 20px;
+    background-color: #dddddd;
+    border-radius: 60px;
+  }
+
+.switch--shadow + label:before,
+.switch--shadow + label:after {
+  display: block;
+  position: absolute;
+  top: 1px;
+  left: 1px;
+  bottom: 1px;
+  content: '';
+}
+.switch--shadow + label:before {
+  right: 1px;
+  background-color: #000000;
+  border-radius: 60px;
+  transition: all 0.4s;
+}
+.switch--shadow + label:after {
+  width: 20px;
+  background-color: #fff;
+  border-radius: 90px;
+  box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.3);
+  transition: all 0.4s;
+}
+
+.switch--shadow:checked + label:before {
+    background-color: #eeeeee;
+  }
+  .switch--shadow:checked + label:after {
+    transform: translateX(25px);
+  }
