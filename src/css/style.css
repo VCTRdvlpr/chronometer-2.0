@@ -34,11 +34,18 @@ a {
     gap: 20px;   
 }
 
+.responsive-alignment{
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
 .main-container h1{
     font-size: 3em;
 }
 
-.main-container span{  
+.main-container h2{  
+  font-size: 3em;
   background-color: #000000;
   color: #ffff;
   border-radius: 100%;
@@ -92,6 +99,7 @@ a {
   width: 50px;
   height: 50px;
 } 
+
 /*------------SWITCH BTN ----------------*/
 
 .switch {
@@ -144,4 +152,36 @@ a {
   }
   .switch--shadow:checked + label:after {
     transform: translateX(25px);
+  }
+
+  /*-------- RESPONSIVE ------------*/
+
+  @media(max-width:400px){     
+
+  .responsive-alignment{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;    
+    height: 300px;
+    margin: 0 auto;
+  }
+
+  .color-container{
+    display: flex;
+    justify-content: center;    
+  }
+  }
+
+  @media(max-width:320px){
+
+    .responsive-alignment h1{
+      font-size: 2.7em;
+    }
+  
+    .color-container{
+      display: flex;
+      justify-content: center;    
+    }
+
   }

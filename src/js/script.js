@@ -70,6 +70,7 @@ function resetTimer(){
     startBtn.style.display="inline";
     pauseBtn.style.display="none";
     resumeBtn.style.display="none";
+    
 }
 
 function formatTimer(time) {
