@@ -164,7 +164,7 @@ body{
 
   /*-------- RESPONSIVE ------------*/
 
-  @media(max-width:600px){     
+  @media(max-width:1081px){     
 
   .responsive-alignment{
     display: flex;
