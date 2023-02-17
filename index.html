@@ -14,7 +14,7 @@
     <title>Cronômetro</title>
 
 </head>
-<body>
+<body id="bodyColor">
     <div class="color-container">
         <div class="change-color">      
             <h1>Alterar cor</h1>      
@@ -25,7 +25,7 @@
     <div class="main-container">
         <div class="responsive-alignment">
             <h1>Cronômetro </h1>          
-            <h2>2.0</h2>  
+            <h2 id="h2Color">2.0</h2>  
         </div>
         <div class="timer-container">
             <div class="time" id="minutes">00</div>
@@ -35,10 +35,19 @@
             <div class="time" id="miliseconds">000</div>                        
         </div>        
         <div class="btns-container">
-            <button class="btn" id="startBtn"><img src="./src/img/outline_play_circle_filled_black_24dp.png" alt="play icon"></button> 
-            <button class="btn" id="pauseBtn"><img src="./src/img/outline_pause_black_24dp.png" alt="pause icon"> </button>               
+            <button class="btn" id="startBtn">
+                <img id="startBtnDark" src="./src/img/outline_play_circle_filled_black_24dp.png" alt="play icon">
+                <img id="startBtnWhite" src="./src/img/play-icon-white.png" alt="play icon">
+            </button> 
+            <button class="btn" id="pauseBtn">
+                <img id="pauseBtnDark" src="./src/img/outline_pause_black_24dp.png" alt="pause icon"> 
+                <img id="pauseBtnWhite" src="./src/img/pause-icon-white.png" alt="pause icon">
+            </button>               
             <button class="btn" id="resumeBtn"><img src="./src/img/resume-icon.png" alt="resume icon"></button>                   
-            <button class="btn" id="resetBtn"><img src="./src/img/outline_replay_black_24dp.png" alt="reset icon"></button>
+            <button class="btn" id="resetBtn">
+                <img id="resetBtnDark" src="./src/img/outline_replay_black_24dp.png" alt="reset icon">
+                <img id="resetBtnWhite" src="./src/img/reset-icon-white.png" alt="reset icon">
+            </button>
         </div>
     </div>
     

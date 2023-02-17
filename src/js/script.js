@@ -82,3 +82,50 @@ function formatMiliseconds(time){
     return time < 100 ? `${time}`.padStart(3, "0") : time;
 }
 
+
+const changeColorBtn = document.getElementById('switch-shadow');
+const colorDark = document.getElementById('bodyColor');
+const subColorDark = document.getElementById('h2Color'); 
+const startBtnDark = document.getElementById('startBtnDark');
+const startBtnWhite = document.getElementById('startBtnWhite');
+const pauseBtnDark = document.getElementById('pauseBtnDark'); 
+const pauseBtnWhite = document.getElementById('pauseBtnWhite'); 
+const resetBtnDark = document.getElementById('resetBtnDark'); 
+const resetBtnWhite = document.getElementById('resetBtnWhite');
+let changeColorParameter = false;
+
+changeColorBtn.addEventListener("click", changeColor);
+
+function changeColor(){
+    
+    if(!changeColorParameter){
+
+        changeColorParameter = true;
+        colorDark.style.backgroundColor='#000000';
+        colorDark.style.color='#ffff';
+        subColorDark.style.backgroundColor='#ffff';
+        subColorDark.style.color='#000000';
+        startBtnDark.style.display='none';
+        startBtnWhite.style.display='inline';
+        pauseBtnDark.style.display='none';
+        pauseBtnWhite.style.display='inline';
+        resetBtnDark.style.display='none';
+        resetBtnWhite.style.display='inline';
+    }    
+
+    else{
+
+        changeColorParameter = false;
+        colorDark.style.backgroundColor='#ffff'
+        colorDark.style.color='#000000';
+        subColorDark.style.backgroundColor='#000000';
+        subColorDark.style.color='#ffff';
+        startBtnDark.style.display='inline';
+        startBtnWhite.style.display='none';
+        pauseBtnDark.style.display='inline';
+        pauseBtnWhite.style.display='none';
+        resetBtnDark.style.display='inline';
+        resetBtnWhite.style.display='none';
+    }
+}
+
